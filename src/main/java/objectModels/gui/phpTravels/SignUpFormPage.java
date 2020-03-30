@@ -40,6 +40,8 @@ public class SignUpFormPage {
 		this.browser = browser;
 	}
 
+//	In this case used email valid format but not real one, so here we check format validation, if system requirements need to
+//	validate if the email is real or not we will change the test data and test case validation.
 	public void signUpWithValidData() {
 		fillSignUpDataAndSubmit("validFirstName", "validLastName", "validMobileNumber", "validEmail1", "validPassword",
 				"validPassword");
@@ -132,7 +134,7 @@ public class SignUpFormPage {
 		if (checkCurrentUrl() && ElementActions.isElementDisplayed(browser, signUpResultAlert)) {
 
 			Assertions.assertEquals(expectedMessage, ElementActions.getText(browser, signUpResultAlert),
-					AssertionComparisonType.CONTAINS, AssertionType.POSITIVE, expectedMessage);
+					AssertionComparisonType.CONTAINS, AssertionType.POSITIVE, ElementActions.getText(browser, signUpResultAlert));
 
 		} else if (checkCurrentUrl() && !(ElementActions.isElementDisplayed(browser, signUpResultAlert))) {
 			Assertions.assertTrue(!checkCurrentUrl(), AssertionType.POSITIVE, getTestData("AlertMessageNotDisplayed"));
@@ -150,8 +152,7 @@ public class SignUpFormPage {
 //	if user try to sign up with valid data he will be redirected to account url
 //	if user try to sign up with Invalid data he will stay on registration page url, so we assert alert message
 	private Boolean checkCurrentUrl() {
-		if (BrowserActions.getCurrentURL(browser).equalsIgnoreCase(getTestData("URL"))
-				&& ElementActions.isElementDisplayed(browser, confirmPassword)) {
+		if (BrowserActions.getCurrentURL(browser).equalsIgnoreCase(getTestData("URL"))) {
 			return true;
 		} else {
 			return false;

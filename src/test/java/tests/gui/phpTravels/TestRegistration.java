@@ -128,7 +128,6 @@ public class TestRegistration {
 		logPrefs.enable(LogType.PERFORMANCE, Level.ALL);
 		options.setCapability("goog:loggingPrefs", logPrefs);
 		browser = new ChromeDriver(options);
-
 		userProfilePage = new UserProfilePage(browser);
 		signUpFormPage = new SignUpFormPage(browser);
 		loginPage = new LoginPage(browser);
