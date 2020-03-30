@@ -35,7 +35,7 @@ public class SignUpFormPage {
 	private static By confirmPassword = By.name("confirmpassword");
 	private static By signUpButton = By.xpath("//button[contains(@class,'signupbtn')]");
 	private static By signUpResultAlert = By.className("resultsignup");
-	private static By signUpText = By.xpath("//div[contains(@class,'d-flex')]//h3");
+//	private static By signUpText = By.xpath("//div[contains(@class,'d-flex')]//h3");
 
 	public SignUpFormPage(WebDriver browser) {
 		this.browser = browser;
@@ -52,7 +52,6 @@ public class SignUpFormPage {
 				"validPassword", "validPassword");
 
 		assertAlertMessageTextIfDisplayed(getTestData("FirstNameAlert"), getTestData("FirstNameMessageLogMessage"));
-//		assertIfUserCanRegisterWithInvalidData(getTestData("FirstNameMessageLogMessage"));
 	}
 
 //	Asserting that alert message is displayed as system doesn't validate LastName characters
@@ -61,7 +60,6 @@ public class SignUpFormPage {
 				"validPassword", "validPassword");
 
 		assertAlertMessageTextIfDisplayed(getTestData("LastNameAlert"), getTestData("LastNameMessageLogMessage"));
-//		assertIfUserCanRegisterWithInvalidData(getTestData("LastNameMessageLogMessage"));
 	}
 
 //	Asserting that alert message is displayed as system doesn't validate First and LastName matching
@@ -71,7 +69,6 @@ public class SignUpFormPage {
 
 		assertAlertMessageTextIfDisplayed(getTestData("FirstAndLastNameMatches"),
 				getTestData("FirstName_LastName_MatchedLogMessage"));
-//		assertIfUserCanRegisterWithInvalidData(getTestData("FirstName_LastName_MatchedLogMessage"));
 	}
 
 //	Asserting that alert message is displayed as system doesn't validate mobile number
@@ -81,7 +78,6 @@ public class SignUpFormPage {
 
 		assertAlertMessageTextIfDisplayed(getTestData("InvalidMobileNumberAlertMessage"),
 				getTestData("InvalidMobileNumberLogMessage"));
-//		assertIfUserCanRegisterWithInvalidData(getTestData("InvalidMobileNumberLogMessage"));
 	}
 
 //	Asserting that alert message is displayed as system doesn't validate Invalid mail address format
@@ -93,7 +89,6 @@ public class SignUpFormPage {
 
 		assertAlertMessageTextIfDisplayed(getTestData("InvalidEmailFormate"),
 				getTestData("InvalidEmailFormatLogMessage"));
-//		assertIfUserCanRegisterWithInvalidData(getTestData("InvalidEmailFormatLogMessage"));
 	}
 
 //	registeredEmail is already existing user using validEmail1 that registered before
@@ -113,7 +108,6 @@ public class SignUpFormPage {
 
 		assertAlertMessageTextIfDisplayed(getTestData("InvalidPasswordFormat"),
 				getTestData("InvalidPasswordFormatLogMessage"));
-//		assertIfUserCanRegisterWithInvalidData(getTestData("InvalidPasswordFormatLogMessage"));
 	}
 
 //	Validate password minimum length
@@ -137,6 +131,7 @@ public class SignUpFormPage {
 //	Method to assert alert message text if displayed
 	private void assertAlertMessageTextIfDisplayed(String expectedMessage, String logMessage) {
 		if (checkCurrentUrl() && ElementActions.isElementDisplayed(browser, signUpResultAlert)) {
+			
 			Assertions.assertEquals(expectedMessage, ElementActions.getText(browser, signUpResultAlert),
 					AssertionComparisonType.CONTAINS, AssertionType.POSITIVE, expectedMessage);
 
@@ -158,7 +153,7 @@ public class SignUpFormPage {
 //	if user try to sign up with Invalid data he will stay on registration page url, so we assert alert message
 	private Boolean checkCurrentUrl() {
 		if (BrowserActions.getCurrentURL(browser).equalsIgnoreCase(getTestData("URL"))
-				&& ElementActions.isElementDisplayed(browser, signUpText)) {
+				&& ElementActions.isElementDisplayed(browser, confirmPassword)) {
 			return true;
 		} else {
 			return false;

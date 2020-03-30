@@ -1,36 +1,288 @@
 returned response for https://www.phptravels.net/register: 200
 
 status code: 200
-headers: {"date":"Mon, 30 Mar 2020 11:28:45 GMT","server":"cloudflare","expires":"Thu, 19 Nov 1981 08:52:00 GMT","cf-ray":"57c17d28bd2b9def-ATH","vary":"Accept-Encoding,User-Agent","content-encoding":"br","x-frame-options":"SAMEORIGIN","x-turbo-charged-by":"LiteSpeed","cf-cache-status":"DYNAMIC","expect-ct":"max-age=604800, report-uri=\"https:\/\/report-uri.cloudflare.com\/cdn-cgi\/beacon\/expect-ct\"","pragma":"no-cache","strict-transport-security":"max-age=63072000; includeSubDomains","set-cookie":"__cfduid=d47eb1b179923efe9f22c048c25b110e71585567724; expires=Wed, 29-Apr-20 11:28:44 GMT; path=\/; domain=.phptravels.net; HttpOnly; SameSite=Lax; Secure\nci_session=775b7ae7db0c8e2483aa493b0e289346e02af53b; path=\/; HttpOnly; secure","x-content-type-options":"nosniff","x-powered-by":"PHP\/7.4.4","content-type":"text\/html; charset=UTF-8","cache-control":"no-store, no-cache, must-revalidate","status":"200"}
-{"webview":"039827F9A795657D2EB7C2039333D974","message":{"method":"Network.responseReceived","params":{"frameId":"039827F9A795657D2EB7C2039333D974","requestId":"19A71CF5CFDFBFE75D267E206372EE4C","response":{"headers":{"date":"Mon, 30 Mar 2020 11:28:45 GMT","server":"cloudflare","expires":"Thu, 19 Nov 1981 08:52:00 GMT","cf-ray":"57c17d28bd2b9def-ATH","vary":"Accept-Encoding,User-Agent","content-encoding":"br","x-frame-options":"SAMEORIGIN","x-turbo-charged-by":"LiteSpeed","cf-cache-status":"DYNAMIC","expect-ct":"max-age=604800, report-uri=\"https:\/\/report-uri.cloudflare.com\/cdn-cgi\/beacon\/expect-ct\"","pragma":"no-cache","strict-transport-security":"max-age=63072000; includeSubDomains","set-cookie":"__cfduid=d47eb1b179923efe9f22c048c25b110e71585567724; expires=Wed, 29-Apr-20 11:28:44 GMT; path=\/; domain=.phptravels.net; HttpOnly; SameSite=Lax; Secure\nci_session=775b7ae7db0c8e2483aa493b0e289346e02af53b; path=\/; HttpOnly; secure","x-content-type-options":"nosniff","x-powered-by":"PHP\/7.4.4","content-type":"text\/html; charset=UTF-8","cache-control":"no-store, no-cache, must-revalidate","status":"200"},"securityDetails":{"cipher":"AES_128_GCM","signedCertificateTimestampList":[{"signatureData":"3045022100DDC8C1A946C441A8BFE0B92F82CF451153DD7C1C6487FB4FA3AB927EE97CC154022001C024AD71FA9105A48A0C18B5EA1217775BFA53155EF1E659390B604606F947","logDescription":"Google 'Skydiver' log","origin":"Embedded in certificate","logId":"BBD9DFBC1F8A71B593942397AA927B473857950AAB52E81A909664368E1ED185","hashAlgorithm":"SHA-256","signatureAlgorithm":"ECDSA","status":"Verified","timestamp":1580747511681},{"signatureData":"30440220126B1175C38407F71B99758C8E836F886C8A024512CF5A046C2AA05FBDF75D55022055D9D14147105ACEB5032987BDA5F29743979FF2732B07E172A04E8415E08116","logDescription":"Cloudflare 'Nimbus2020' Log","origin":"Embedded in certificate","logId":"5EA773F9DF56C0E7B536487DD049E0327A919A0C84A112128418759681714558","hashAlgorithm":"SHA-256","signatureAlgorithm":"ECDSA","status":"Verified","timestamp":1580747511606}],"protocol":"TLS 1.3","certificateId":0,"certificateTransparencyCompliance":"compliant","sanList":["sni.cloudflaressl.com","*.phptravels.net","phptravels.net"],"validFrom":1580688000,"issuer":"CloudFlare Inc ECC CA-2","keyExchange":"","keyExchangeGroup":"X25519","subjectName":"sni.cloudflaressl.com","validTo":1602244800},"connectionReused":false,"fromPrefetchCache":false,"timing":{"pushEnd":0,"workerStart":-1,"proxyEnd":-1,"workerReady":-1,"sslEnd":238.166,"pushStart":0,"requestTime":22321.484599,"sslStart":109.564,"dnsStart":0.68,"sendEnd":238.729,"connectEnd":238.172,"connectStart":1.769,"sendStart":238.448,"dnsEnd":1.769,"receiveHeadersEnd":1017.088,"proxyStart":-1},"encodedDataLength":560,"remotePort":443,"mimeType":"text\/html","securityState":"secure","url":"https:\/\/www.phptravels.net\/register","protocol":"h2","fromDiskCache":false,"fromServiceWorker":false,"requestHeaders":{"sec-fetch-mode":"navigate","sec-fetch-site":"none","accept-language":"en-US,en;q=0.9","sec-fetch-user":"?1","accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.9",":method":"GET",":scheme":"https","upgrade-insecure-requests":"1",":path":"\/register",":authority":"www.phptravels.net","accept-encoding":"gzip, deflate, br","sec-fetch-dest":"document","user-agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/80.0.3987.149 Safari\/537.36"},"remoteIPAddress":"104.24.122.172","statusText":"","connectionId":32,"status":200},"loaderId":"19A71CF5CFDFBFE75D267E206372EE4C","type":"Document","timestamp":22322.504313}}}
+headers: {"date":"Mon, 30 Mar 2020 12:24:05 GMT","server":"cloudflare","expires":"Thu, 19 Nov 1981 08:52:00 GMT","cf-ray":"57c1ce395fb43669-MAN","vary":"Accept-Encoding,User-Agent","content-encoding":"br","x-frame-options":"SAMEORIGIN","x-turbo-charged-by":"LiteSpeed","cf-cache-status":"DYNAMIC","expect-ct":"max-age=604800, report-uri=\"https:\/\/report-uri.cloudflare.com\/cdn-cgi\/beacon\/expect-ct\"","pragma":"no-cache","strict-transport-security":"max-age=63072000; includeSubDomains","x-content-type-options":"nosniff","x-powered-by":"PHP\/7.4.4","content-type":"text\/html; charset=UTF-8","cache-control":"no-store, no-cache, must-revalidate","status":"200"}
+{"webview":"CC26730FD4AA472DA740F123E3ACE784","message":{"method":"Network.responseReceived","params":{"frameId":"CC26730FD4AA472DA740F123E3ACE784","requestId":"625852ECEA2B9CE2E8EBA9E13D1F5D97","response":{"headers":{"date":"Mon, 30 Mar 2020 12:24:05 GMT","server":"cloudflare","expires":"Thu, 19 Nov 1981 08:52:00 GMT","cf-ray":"57c1ce395fb43669-MAN","vary":"Accept-Encoding,User-Agent","content-encoding":"br","x-frame-options":"SAMEORIGIN","x-turbo-charged-by":"LiteSpeed","cf-cache-status":"DYNAMIC","expect-ct":"max-age=604800, report-uri=\"https:\/\/report-uri.cloudflare.com\/cdn-cgi\/beacon\/expect-ct\"","pragma":"no-cache","strict-transport-security":"max-age=63072000; includeSubDomains","x-content-type-options":"nosniff","x-powered-by":"PHP\/7.4.4","content-type":"text\/html; charset=UTF-8","cache-control":"no-store, no-cache, must-revalidate","status":"200"},"securityDetails":{"cipher":"AES_128_GCM","signedCertificateTimestampList":[{"signatureData":"3045022100DDC8C1A946C441A8BFE0B92F82CF451153DD7C1C6487FB4FA3AB927EE97CC154022001C024AD71FA9105A48A0C18B5EA1217775BFA53155EF1E659390B604606F947","logDescription":"Google 'Skydiver' log","origin":"Embedded in certificate","logId":"BBD9DFBC1F8A71B593942397AA927B473857950AAB52E81A909664368E1ED185","hashAlgorithm":"SHA-256","signatureAlgorithm":"ECDSA","status":"Verified","timestamp":1580747511681},{"signatureData":"30440220126B1175C38407F71B99758C8E836F886C8A024512CF5A046C2AA05FBDF75D55022055D9D14147105ACEB5032987BDA5F29743979FF2732B07E172A04E8415E08116","logDescription":"Cloudflare 'Nimbus2020' Log","origin":"Embedded in certificate","logId":"5EA773F9DF56C0E7B536487DD049E0327A919A0C84A112128418759681714558","hashAlgorithm":"SHA-256","signatureAlgorithm":"ECDSA","status":"Verified","timestamp":1580747511606}],"protocol":"TLS 1.3","certificateId":0,"certificateTransparencyCompliance":"compliant","sanList":["sni.cloudflaressl.com","*.phptravels.net","phptravels.net"],"validFrom":1580688000,"issuer":"CloudFlare Inc ECC CA-2","keyExchange":"","keyExchangeGroup":"X25519","subjectName":"sni.cloudflaressl.com","validTo":1602244800},"connectionReused":true,"fromPrefetchCache":false,"timing":{"pushEnd":0,"workerStart":-1,"proxyEnd":-1,"workerReady":-1,"sslEnd":-1,"pushStart":0,"requestTime":25642.132412,"sslStart":-1,"dnsStart":-1,"sendEnd":0.737,"connectEnd":-1,"connectStart":-1,"sendStart":0.467,"dnsEnd":-1,"receiveHeadersEnd":651.124,"proxyStart":-1},"encodedDataLength":146,"remotePort":443,"mimeType":"text\/html","securityState":"secure","url":"https:\/\/www.phptravels.net\/register","protocol":"h2","fromDiskCache":false,"fromServiceWorker":false,"requestHeaders":{"sec-fetch-mode":"navigate","sec-fetch-site":"none","accept-language":"en-US,en;q=0.9","cookie":"__cfduid=d83f7da5e0e184bef5134d0d929a8af4a1585570773; ci_session=3c5b5a38724a1dec5aae8011a04cd3d44872ae0d; _ga=GA1.2.953774025.1585570776; _gid=GA1.2.732884984.1585570776","sec-fetch-user":"?1","accept":"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.9",":method":"GET",":scheme":"https","upgrade-insecure-requests":"1",":path":"\/register","cache-control":"max-age=0",":authority":"www.phptravels.net","accept-encoding":"gzip, deflate, br","sec-fetch-dest":"document","user-agent":"Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/80.0.3987.149 Safari\/537.36"},"remoteIPAddress":"104.24.123.172","statusText":"","connectionId":31,"status":200},"loaderId":"625852ECEA2B9CE2E8EBA9E13D1F5D97","type":"Document","timestamp":25642.785514}}}
 
-[ReportManager] Browser Action [getCurrentURL] successfully performed. With the following test data [https://www.phptravels.net/register]. @30-03-2020 13:29:09.0544 PM
-[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-03-2020 13:29:10.0361 PM
-[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-03-2020 13:29:11.0221 PM
-[ReportManager] Element Action [getText] successfully performed. With the following test data [The Email field must contain a valid email address.]. @30-03-2020 13:29:12.0057 PM
-[ReportManager] The Email field must contain a valid email address.... @30-03-2020 13:29:12.0067 PM
-[ReportManager] AssertEquals PASSED; Expected [The Email field must contain a valid email address.] and Actual [The Email field must contain a valid email address.]. Comparison Type [CONTAINS]. Validation Type [POSITIVE]. @30-03-2020 13:29:12.0074 PM
-[ReportManager] Successfully created attachment [Animated Gif - testEmailFormatValidation] @30-03-2020 13:29:12.0082 PM
-[ReportManager] Successfully created attachment [SHAFT Engine Logs - Current Method log: testEmailFormatValidation] @30-03-2020 13:29:12.0084 PM
+[ReportManager] Browser Action [getCurrentURL] successfully performed. With the following test data [https://www.phptravels.net/register]. @30-03-2020 14:24:25.0700 PM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-03-2020 14:24:26.0477 PM
+[ReportManager] Element Action [isElementDisplayed] successfully performed. @30-03-2020 14:24:27.0264 PM
+[ReportManager] Element Action [getText] successfully performed. With the following test data [Email Already Exists.]. @30-03-2020 14:24:28.0075 PM
+[ReportManager] Email Already Exists.... @30-03-2020 14:24:28.0075 PM
+[ReportManager] AssertEquals PASSED; Expected [Email Already Exists.] and Actual [Email Already Exists.]. Comparison Type [CONTAINS]. Validation Type [POSITIVE]. @30-03-2020 14:24:28.0076 PM
+[ReportManager] Successfully created attachment [Animated Gif - testSignUpWithRegisteredEmailValidation] @30-03-2020 14:24:28.0081 PM
+[ReportManager] Successfully created attachment [SHAFT Engine Logs - Current Method log: testSignUpWithRegisteredEmailValidation] @30-03-2020 14:24:28.0082 PM
 
 ################################################################################################################################################
 Starting Execution of a Configuration (Setup or Teardown) Method
 Test Method:		[tests.gui.phpTravels.TestRegistration.afterMehtod]
 ################################################################################################################################################
-[ReportManager] Browser Action [getCurrentURL] successfully performed. With the following test data [https://www.phptravels.net/register]. @30-03-2020 13:29:13.0326 PM
-[ReportManager] Successfully created attachment [Animated Gif - afterMehtod] @30-03-2020 13:29:13.0329 PM
-[ReportManager] Successfully created attachment [SHAFT Engine Logs - Current Method log: afterMehtod] @30-03-2020 13:29:13.0331 PM
+[ReportManager] Browser Action [getCurrentURL] successfully performed. With the following test data [https://www.phptravels.net/register]. @30-03-2020 14:24:29.0214 PM
+[ReportManager] Successfully created attachment [Animated Gif - afterMehtod] @30-03-2020 14:24:29.0216 PM
+[ReportManager] Successfully created attachment [SHAFT Engine Logs - Current Method log: afterMehtod] @30-03-2020 14:24:29.0217 PM
 
 ################################################################################################################################################
 Starting Execution of a Configuration (Setup or Teardown) Method
 Test Method:		[tests.gui.phpTravels.TestRegistration.afterClass]
 ################################################################################################################################################
-PASSED: testEmailFormatValidation
+PASSED: checkSignUpWithValidDataAndVerifyLogin
+        TC001 - Check sign up successfully then login
+PASSED: testPasswordConfirmationValidation
+        TC0010 - Password confirmation validation
+PASSED: testPasswordMinLengthVlaidation
+        TC009 - Password minimum length validation
+PASSED: testSignUpWithRegisteredEmailValidation
+        TC007 - Existing Email validation
+FAILED: testEmailFormatValidation
         TC006 - Email format validation
+java.lang.AssertionError: AssertEquals FAILED; Expected [https://www.phptravels.net/register] and Actual [https://www.phptravels.net/account/]. Comparison Type [EQUALS]. Validation Type [POSITIVE].
+	at org.testng.Assert.fail(Assert.java:97)
+	at com.shaft.validation.ValidationActions.reportValidationState(ValidationActions.java:184)
+	at com.shaft.validation.ValidationActions.fail(ValidationActions.java:80)
+	at com.shaft.validation.ValidationActions.validateEquals(ValidationActions.java:236)
+	at com.shaft.validation.Assertions.assertEquals(Assertions.java:35)
+	at objectModels.gui.phpTravels.SignUpFormPage.assertThatUserRegisteredWithInvalidData(SignUpFormPage.java:149)
+	at objectModels.gui.phpTravels.SignUpFormPage.assertAlertMessageTextIfDisplayed(SignUpFormPage.java:142)
+	at objectModels.gui.phpTravels.SignUpFormPage.signUpWithWithInvalidEmailFormat(SignUpFormPage.java:90)
+	at tests.gui.phpTravels.TestRegistration.testEmailFormatValidation(TestRegistration.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+FAILED: testFirstNameAndLastNameMatching
+        TC004 - Check if user can signup successfully with matched first and last names
+java.lang.AssertionError: AssertEquals FAILED; Expected [https://www.phptravels.net/register] and Actual [https://www.phptravels.net/account/]. Comparison Type [EQUALS]. Validation Type [POSITIVE].
+	at org.testng.Assert.fail(Assert.java:97)
+	at com.shaft.validation.ValidationActions.reportValidationState(ValidationActions.java:184)
+	at com.shaft.validation.ValidationActions.fail(ValidationActions.java:80)
+	at com.shaft.validation.ValidationActions.validateEquals(ValidationActions.java:236)
+	at com.shaft.validation.Assertions.assertEquals(Assertions.java:35)
+	at objectModels.gui.phpTravels.SignUpFormPage.assertThatUserRegisteredWithInvalidData(SignUpFormPage.java:149)
+	at objectModels.gui.phpTravels.SignUpFormPage.assertAlertMessageTextIfDisplayed(SignUpFormPage.java:142)
+	at objectModels.gui.phpTravels.SignUpFormPage.signUpWithMatchedFirstAndLastNames(SignUpFormPage.java:70)
+	at tests.gui.phpTravels.TestRegistration.testFirstNameAndLastNameMatching(TestRegistration.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+FAILED: testFirstNameValidation
+        TC002 - First Name format validation
+java.lang.AssertionError: AssertEquals FAILED; Expected [https://www.phptravels.net/register] and Actual [https://www.phptravels.net/account/]. Comparison Type [EQUALS]. Validation Type [POSITIVE].
+	at org.testng.Assert.fail(Assert.java:97)
+	at com.shaft.validation.ValidationActions.reportValidationState(ValidationActions.java:184)
+	at com.shaft.validation.ValidationActions.fail(ValidationActions.java:80)
+	at com.shaft.validation.ValidationActions.validateEquals(ValidationActions.java:236)
+	at com.shaft.validation.Assertions.assertEquals(Assertions.java:35)
+	at objectModels.gui.phpTravels.SignUpFormPage.assertThatUserRegisteredWithInvalidData(SignUpFormPage.java:149)
+	at objectModels.gui.phpTravels.SignUpFormPage.assertAlertMessageTextIfDisplayed(SignUpFormPage.java:142)
+	at objectModels.gui.phpTravels.SignUpFormPage.signUpWithInvalidFirstName(SignUpFormPage.java:54)
+	at tests.gui.phpTravels.TestRegistration.testFirstNameValidation(TestRegistration.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+FAILED: testLastNameValidation
+        TC003 - Last Name format validation
+java.lang.AssertionError: AssertEquals FAILED; Expected [https://www.phptravels.net/register] and Actual [https://www.phptravels.net/account/]. Comparison Type [EQUALS]. Validation Type [POSITIVE].
+	at org.testng.Assert.fail(Assert.java:97)
+	at com.shaft.validation.ValidationActions.reportValidationState(ValidationActions.java:184)
+	at com.shaft.validation.ValidationActions.fail(ValidationActions.java:80)
+	at com.shaft.validation.ValidationActions.validateEquals(ValidationActions.java:236)
+	at com.shaft.validation.Assertions.assertEquals(Assertions.java:35)
+	at objectModels.gui.phpTravels.SignUpFormPage.assertThatUserRegisteredWithInvalidData(SignUpFormPage.java:149)
+	at objectModels.gui.phpTravels.SignUpFormPage.assertAlertMessageTextIfDisplayed(SignUpFormPage.java:142)
+	at objectModels.gui.phpTravels.SignUpFormPage.signUpWithInvalidLastName(SignUpFormPage.java:62)
+	at tests.gui.phpTravels.TestRegistration.testLastNameValidation(TestRegistration.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+FAILED: testMobileNumberValidation
+        TC005 - Mobile number format validation
+java.lang.AssertionError: AssertEquals FAILED; Expected [https://www.phptravels.net/register] and Actual [https://www.phptravels.net/account/]. Comparison Type [EQUALS]. Validation Type [POSITIVE].
+	at org.testng.Assert.fail(Assert.java:97)
+	at com.shaft.validation.ValidationActions.reportValidationState(ValidationActions.java:184)
+	at com.shaft.validation.ValidationActions.fail(ValidationActions.java:80)
+	at com.shaft.validation.ValidationActions.validateEquals(ValidationActions.java:236)
+	at com.shaft.validation.Assertions.assertEquals(Assertions.java:35)
+	at objectModels.gui.phpTravels.SignUpFormPage.assertThatUserRegisteredWithInvalidData(SignUpFormPage.java:149)
+	at objectModels.gui.phpTravels.SignUpFormPage.assertAlertMessageTextIfDisplayed(SignUpFormPage.java:142)
+	at objectModels.gui.phpTravels.SignUpFormPage.signUpWithInvalidMobileNumber(SignUpFormPage.java:79)
+	at tests.gui.phpTravels.TestRegistration.testMobileNumberValidation(TestRegistration.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+FAILED: testPasswordMaxLengthAndAlphaNumericValidation
+        TC008 - Password length and characters validation
+java.lang.AssertionError: AssertEquals FAILED; Expected [https://www.phptravels.net/register] and Actual [https://www.phptravels.net/account/]. Comparison Type [EQUALS]. Validation Type [POSITIVE].
+	at org.testng.Assert.fail(Assert.java:97)
+	at com.shaft.validation.ValidationActions.reportValidationState(ValidationActions.java:184)
+	at com.shaft.validation.ValidationActions.fail(ValidationActions.java:80)
+	at com.shaft.validation.ValidationActions.validateEquals(ValidationActions.java:236)
+	at com.shaft.validation.Assertions.assertEquals(Assertions.java:35)
+	at objectModels.gui.phpTravels.SignUpFormPage.assertThatUserRegisteredWithInvalidData(SignUpFormPage.java:149)
+	at objectModels.gui.phpTravels.SignUpFormPage.assertAlertMessageTextIfDisplayed(SignUpFormPage.java:142)
+	at objectModels.gui.phpTravels.SignUpFormPage.signUpWithWithInvalidPasswordMaxLengthAndNumeric(SignUpFormPage.java:109)
+	at tests.gui.phpTravels.TestRegistration.testPasswordMaxLengthAndAlphaNumericValidation(TestRegistration.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
 
 ===============================================
     SHAFT_Engine: Custom Test
-    Tests run: 1, Failures: 0, Skips: 0
+    Tests run: 10, Failures: 6, Skips: 0
 ===============================================
 
 
@@ -42,16 +294,18 @@ Test Method:		[com.shaft.tools.io.LogsReporter.closureActivities]
 ################################################################################################################################################
 Test Closure Activities
 ################################################################################################################################################
-[ReportManager] Successfully created attachment [SHAFT Engine Logs - Execution log] @30-03-2020 13:29:13.0969 PM
+[ReportManager] Issue Summary: Total Issues = 6, New issues for Failed Tests = 6, Open issues for Passed Tests = 0, Open issues for Failed Tests = 0. Kindly check the attached Issue details. @30-03-2020 14:24:29.0902 PM
+[ReportManager] Successfully created attachment [SHAFT Engine Logs - Issues log CSV: 20200330-142429] @30-03-2020 14:24:29.0903 PM
+[ReportManager] Successfully created attachment [SHAFT Engine Logs - Execution log] @30-03-2020 14:24:29.0903 PM
 
 ################################################################################################################################################
 This test run was powered by SHAFT Engine Version: [4.1.20200309]
 SHAFT Engine is licensed under the MIT License: [https://github.com/MohabMohie/SHAFT_ENGINE/blob/master/LICENSE].
 ################################################################################################################################################
-[ReportManager] Successfully created attachment [SHAFT Engine Logs - Execution log: 20200330-132913] @30-03-2020 13:29:13.0971 PM
+[ReportManager] Successfully created attachment [SHAFT Engine Logs - Execution log: 20200330-142429] @30-03-2020 14:24:29.0904 PM
 
 ===============================================
 SHAFT_Engine: Custom Suite
-Total tests run: 1, Passes: 1, Failures: 0, Skips: 0
+Total tests run: 10, Passes: 4, Failures: 6, Skips: 0
 ===============================================
 

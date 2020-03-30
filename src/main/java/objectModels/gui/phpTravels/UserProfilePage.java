@@ -10,7 +10,7 @@ public class UserProfilePage {
 	private WebDriver browser;
 
 	private static By userNameDropDown = By.xpath("//li[contains(@class, 'd-none')]");
-	private static By logoutButton = By.xpath("//a[contains(@class, 'dropdown-item tr')]");
+	private static By logoutButton = By.xpath("//a[contains(., 'Logout')]");
 
 	public UserProfilePage(WebDriver browser) {
 		this.browser = browser;
