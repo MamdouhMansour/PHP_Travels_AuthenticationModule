@@ -34,7 +34,7 @@
   </parameter>
   <parameter>
     <key>sun.java.command</key>
-    <value>org.testng.remote.RemoteTestNG -usedefaultlisteners false -listener com.shaft.tools.listeners.AlterSuiteListener,com.shaft.tools.listeners.InvokedMethodListener,com.shaft.tools.listeners.SuiteListener -serport 62874 -protocol json -d C:\Users\Mamdouh\workspace\PHPTravels_RegistrationModule\test-output C:\Users\Mamdouh\AppData\Local\Temp\testng-eclipse-2144944020\testng-customsuite.xml</value>
+    <value>org.testng.remote.RemoteTestNG -usedefaultlisteners false -listener com.shaft.tools.listeners.AlterSuiteListener,com.shaft.tools.listeners.InvokedMethodListener,com.shaft.tools.listeners.SuiteListener -serport 51886 -protocol json -d C:\Users\Mamdouh\workspace\PHPTravels_RegistrationModule\test-output C:\Users\Mamdouh\AppData\Local\Temp\testng-eclipse--1082461994\testng-customsuite.xml</value>
   </parameter>
   <parameter>
     <key>jdk.debug</key>

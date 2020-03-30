@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: tests.gui.phpTravels.TestRegistration
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 305.526 s <<< FAILURE! - in tests.gui.phpTravels.TestRegistration
+tests.gui.phpTravels.TestRegistration.testEmailFormatValidation  Time elapsed: 19.199 s  <<< FAILURE!
+java.lang.AssertionError: AssertEquals FAILED; Expected [https://www.phptravels.net/register] and Actual [https://www.phptravels.net/account/]. Comparison Type [EQUALS]. Validation Type [POSITIVE].
+	at tests.gui.phpTravels.TestRegistration.testEmailFormatValidation(TestRegistration.java:83)
+
+tests.gui.phpTravels.TestRegistration.testFirstNameAndLastNameMatching  Time elapsed: 19.332 s  <<< FAILURE!
+java.lang.AssertionError: AssertEquals FAILED; Expected [https://www.phptravels.net/register] and Actual [https://www.phptravels.net/account/]. Comparison Type [EQUALS]. Validation Type [POSITIVE].
+	at tests.gui.phpTravels.TestRegistration.testFirstNameAndLastNameMatching(TestRegistration.java:67)
+
+tests.gui.phpTravels.TestRegistration.testFirstNameValidation  Time elapsed: 18.704 s  <<< FAILURE!
+java.lang.AssertionError: AssertEquals FAILED; Expected [https://www.phptravels.net/register] and Actual [https://www.phptravels.net/account/]. Comparison Type [EQUALS]. Validation Type [POSITIVE].
+	at tests.gui.phpTravels.TestRegistration.testFirstNameValidation(TestRegistration.java:51)
+
+tests.gui.phpTravels.TestRegistration.testLastNameValidation  Time elapsed: 18.908 s  <<< FAILURE!
+java.lang.AssertionError: AssertEquals FAILED; Expected [https://www.phptravels.net/register] and Actual [https://www.phptravels.net/account/]. Comparison Type [EQUALS]. Validation Type [POSITIVE].
+	at tests.gui.phpTravels.TestRegistration.testLastNameValidation(TestRegistration.java:59)
+
+tests.gui.phpTravels.TestRegistration.testMobileNumberValidation  Time elapsed: 18.623 s  <<< FAILURE!
+java.lang.AssertionError: AssertEquals FAILED; Expected [https://www.phptravels.net/register] and Actual [https://www.phptravels.net/account/]. Comparison Type [EQUALS]. Validation Type [POSITIVE].
+	at tests.gui.phpTravels.TestRegistration.testMobileNumberValidation(TestRegistration.java:75)
+
+tests.gui.phpTravels.TestRegistration.testPasswordMaxLengthAndAlphaNumericValidation  Time elapsed: 18.3 s  <<< FAILURE!
+java.lang.AssertionError: AssertEquals FAILED; Expected [https://www.phptravels.net/register] and Actual [https://www.phptravels.net/account/]. Comparison Type [EQUALS]. Validation Type [POSITIVE].
+	at tests.gui.phpTravels.TestRegistration.testPasswordMaxLengthAndAlphaNumericValidation(TestRegistration.java:99)
+

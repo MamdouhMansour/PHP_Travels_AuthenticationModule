@@ -35,6 +35,7 @@ public class SignUpFormPage {
 	private static By confirmPassword = By.name("confirmpassword");
 	private static By signUpButton = By.xpath("//button[contains(@class,'signupbtn')]");
 	private static By signUpResultAlert = By.className("resultsignup");
+	private static By signUpText = By.xpath("//div[contains(@class,'d-flex')]//h3");
 
 	public SignUpFormPage(WebDriver browser) {
 		this.browser = browser;
@@ -50,7 +51,8 @@ public class SignUpFormPage {
 		fillSignUpDataAndSubmit("InvalidFirstName", "validLastName", "validMobileNumber", "validEmail2",
 				"validPassword", "validPassword");
 
-		assertIfUserCanRegisterWithInvalidData(getTestData("FirstNameMessageLogMessage"));
+		assertAlertMessageTextIfDisplayed(getTestData("FirstNameAlert"), getTestData("FirstNameMessageLogMessage"));
+//		assertIfUserCanRegisterWithInvalidData(getTestData("FirstNameMessageLogMessage"));
 	}
 
 //	Asserting that alert message is displayed as system doesn't validate LastName characters
@@ -58,7 +60,8 @@ public class SignUpFormPage {
 		fillSignUpDataAndSubmit("validFirstName", "InvalidLastName", "validMobileNumber", "validEmail3",
 				"validPassword", "validPassword");
 
-		assertIfUserCanRegisterWithInvalidData(getTestData("LastNameMessageLogMessage"));
+		assertAlertMessageTextIfDisplayed(getTestData("LastNameAlert"), getTestData("LastNameMessageLogMessage"));
+//		assertIfUserCanRegisterWithInvalidData(getTestData("LastNameMessageLogMessage"));
 	}
 
 //	Asserting that alert message is displayed as system doesn't validate First and LastName matching
@@ -66,7 +69,9 @@ public class SignUpFormPage {
 		fillSignUpDataAndSubmit("validFirstName", "validFirstName", "validMobileNumber", "validEmail4", "validPassword",
 				"validPassword");
 
-		assertIfUserCanRegisterWithInvalidData(getTestData("FirstName_LastName_MatchedLogMessage"));
+		assertAlertMessageTextIfDisplayed(getTestData("FirstAndLastNameMatches"),
+				getTestData("FirstName_LastName_MatchedLogMessage"));
+//		assertIfUserCanRegisterWithInvalidData(getTestData("FirstName_LastName_MatchedLogMessage"));
 	}
 
 //	Asserting that alert message is displayed as system doesn't validate mobile number
@@ -74,15 +79,21 @@ public class SignUpFormPage {
 		fillSignUpDataAndSubmit("validFirstName", "validLastName", "InvalidMobileNumber", "validEmail5",
 				"validPassword", "validPassword");
 
-		assertIfUserCanRegisterWithInvalidData(getTestData("InvalidMobileNumberLogMessage"));
+		assertAlertMessageTextIfDisplayed(getTestData("InvalidMobileNumberAlertMessage"),
+				getTestData("InvalidMobileNumberLogMessage"));
+//		assertIfUserCanRegisterWithInvalidData(getTestData("InvalidMobileNumberLogMessage"));
 	}
 
 //	Asserting that alert message is displayed as system doesn't validate Invalid mail address format
+//	If used "emerge@zz.n" for email system will accept it, but if used "emerge@zz" system will reject it and show alert message
+//	Mail foramat shoudl be "example@example.nnn", if this bug fixed test is fir to pass the test case assigned for this feature 
 	public void signUpWithWithInvalidEmailFormat() {
 		fillSignUpDataAndSubmit("validFirstName", "validLastName", "validMobileNumber", "InvalidEmail1",
 				"validPassword", "validPassword");
 
-		assertIfUserCanRegisterWithInvalidData(getTestData("InvalidEmailFormatLogMessage"));
+		assertAlertMessageTextIfDisplayed(getTestData("InvalidEmailFormate"),
+				getTestData("InvalidEmailFormatLogMessage"));
+//		assertIfUserCanRegisterWithInvalidData(getTestData("InvalidEmailFormatLogMessage"));
 	}
 
 //	registeredEmail is already existing user using validEmail1 that registered before
@@ -100,7 +111,9 @@ public class SignUpFormPage {
 		fillSignUpDataAndSubmit("validFirstName", "validLastName", "validMobileNumber", "validEmail6",
 				"InvalidPassword1", "InvalidPassword1");
 
-		assertIfUserCanRegisterWithInvalidData(getTestData("InvalidPasswordFormatLogMessage"));
+		assertAlertMessageTextIfDisplayed(getTestData("InvalidPasswordFormat"),
+				getTestData("InvalidPasswordFormatLogMessage"));
+//		assertIfUserCanRegisterWithInvalidData(getTestData("InvalidPasswordFormatLogMessage"));
 	}
 
 //	Validate password minimum length
@@ -121,27 +134,22 @@ public class SignUpFormPage {
 				getTestData("PasswordConfirmationLogMessage"));
 	}
 
-//	assert alert message text if displayed
+//	Method to assert alert message text if displayed
 	private void assertAlertMessageTextIfDisplayed(String expectedMessage, String logMessage) {
-		if (checkCurrentUrl()) {
+		if (checkCurrentUrl() && ElementActions.isElementDisplayed(browser, signUpResultAlert)) {
 			Assertions.assertEquals(expectedMessage, ElementActions.getText(browser, signUpResultAlert),
 					AssertionComparisonType.CONTAINS, AssertionType.POSITIVE, expectedMessage);
+
+		} else if (checkCurrentUrl() && !(ElementActions.isElementDisplayed(browser, signUpResultAlert))) {
+			Assertions.assertTrue(!checkCurrentUrl(), AssertionType.POSITIVE, getTestData("AlertMessageNotDisplayed"));
+
 		} else {
 			assertThatUserRegisteredWithInvalidData(logMessage);
 		}
 	}
 
-//	In case system doesn't validate Invalid data and user registered then redirected to account url, fails the test
-	private void assertIfUserCanRegisterWithInvalidData(String logMessage) {
-		if (checkCurrentUrl()) {
-			Assertions.assertTrue(ElementActions.isElementDisplayed(browser, signUpResultAlert),
-					AssertionType.POSITIVE);
-		} else {
-			assertThatUserRegisteredWithInvalidData(logMessage);
-		}
-	}
 
-//	Fail test in case user registered with Invalid data and redirected to account url 
+//	Method to Fail test in case user registered with Invalid data and redirected to account url 
 	private void assertThatUserRegisteredWithInvalidData(String logMessage) {
 		Assertions.assertEquals(getTestData("URL"), BrowserActions.getCurrentURL(browser), logMessage);
 	}
@@ -149,7 +157,8 @@ public class SignUpFormPage {
 //	if user try to sign up with valid data he will be redirected to account url
 //	if user try to sign up with Invalid data he will stay on registration page url, so we assert alert message
 	private Boolean checkCurrentUrl() {
-		if (BrowserActions.getCurrentURL(browser).equalsIgnoreCase(getTestData("URL"))) {
+		if (BrowserActions.getCurrentURL(browser).equalsIgnoreCase(getTestData("URL"))
+				&& ElementActions.isElementDisplayed(browser, signUpText)) {
 			return true;
 		} else {
 			return false;
@@ -179,7 +188,7 @@ public class SignUpFormPage {
 		elementActionsTyping(email, getTestData(mail_Address));
 		elementActionsTyping(password, getTestData(pass));
 		elementActionsTyping(confirmPassword, getTestData(confirmPass));
-		
+
 		clickOnSignUpButton();
 		getRequestResponse();
 	}

@@ -1,6 +1,0 @@
-
-################################################################################################################################################
-Starting Execution:	[8 out of 10] test cases in the current suite
-Test Method:		[tests.gui.phpTravels.TestRegistration.testPasswordMaxLengthAndAlphaNumericValidation]
-Test Description:	[TC008 - Password length and characters validation]
-################################################################################################################################################

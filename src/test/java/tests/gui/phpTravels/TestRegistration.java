@@ -120,6 +120,7 @@ public class TestRegistration {
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--start-maximized");
+		options.addArguments("--incognito");
 		DesiredCapabilities cap = DesiredCapabilities.chrome();
 		cap.setCapability(ChromeOptions.CAPABILITY, options);
 

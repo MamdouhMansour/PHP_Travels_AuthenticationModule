@@ -1,5 +1,0 @@
-[ReportManager] An Exception Occured with this Message: no such window: target window already closed. @30-03-2020 10:10:09.0149 AM
-[ReportManager] Successfully created attachment [Exception Stack Trace - org.openqa.selenium.NoSuchWindowException] @30-03-2020 10:10:09.0150 AM
-[ReportManager] An Exception Occured with this Message: no such window: target window already closed. @30-03-2020 10:10:09.0155 AM
-[ReportManager] Successfully created attachment [Exception Stack Trace - org.openqa.selenium.NoSuchWindowException] @30-03-2020 10:10:09.0156 AM
-[ReportManager] Browser Action [getCurrentURL] failed. @30-03-2020 10:10:09.0157 AM
