@@ -35,7 +35,6 @@ public class SignUpFormPage {
 	private static By confirmPassword = By.name("confirmpassword");
 	private static By signUpButton = By.xpath("//button[contains(@class,'signupbtn')]");
 	private static By signUpResultAlert = By.className("resultsignup");
-//	private static By signUpText = By.xpath("//div[contains(@class,'d-flex')]//h3");
 
 	public SignUpFormPage(WebDriver browser) {
 		this.browser = browser;
@@ -131,7 +130,7 @@ public class SignUpFormPage {
 //	Method to assert alert message text if displayed
 	private void assertAlertMessageTextIfDisplayed(String expectedMessage, String logMessage) {
 		if (checkCurrentUrl() && ElementActions.isElementDisplayed(browser, signUpResultAlert)) {
-			
+
 			Assertions.assertEquals(expectedMessage, ElementActions.getText(browser, signUpResultAlert),
 					AssertionComparisonType.CONTAINS, AssertionType.POSITIVE, expectedMessage);
 
@@ -142,7 +141,6 @@ public class SignUpFormPage {
 			assertThatUserRegisteredWithInvalidData(logMessage);
 		}
 	}
-
 
 //	Method to Fail test in case user registered with Invalid data and redirected to account url 
 	private void assertThatUserRegisteredWithInvalidData(String logMessage) {
