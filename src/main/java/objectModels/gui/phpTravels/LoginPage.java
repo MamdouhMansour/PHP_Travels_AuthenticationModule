@@ -30,16 +30,16 @@ public class LoginPage {
 	public void checkLoginWithValidCredentials() {
 		fillCredetialsAndLogin(getTestData("validEmail1"), getTestData("validPassword"));
 
-		assertCredentials(checkCurrentUrl(), getTestData("SuccessfulLogin"),
+		assertCredentials(getTestData("SuccessfulLogin"),
 				getTestData("FailedLoginWithCorrectCredentials"));
 	}
 
 //	Assertion of login credentials
-	private void assertCredentials(Boolean UrlCheck, String customLogSuccess, String customLogFailure) {
+	private void assertCredentials(String customLogSuccess, String customLogFailure) {
 		if (checkCurrentUrl()) {
-			Assertions.assertTrue(UrlCheck, AssertionType.POSITIVE, customLogSuccess);
+			Assertions.assertTrue(checkCurrentUrl(), AssertionType.POSITIVE, customLogSuccess);
 		} else {
-			Assertions.assertTrue(UrlCheck, AssertionType.POSITIVE, customLogFailure);
+			Assertions.assertTrue(checkCurrentUrl(), AssertionType.POSITIVE, customLogFailure);
 		}
 	}
 
