@@ -47,4 +47,8 @@
 - Automatically host reports with Jenkins.
 
 
-#### Note: System database is cleared based on constant time or based on what controll it.
+#### Note: 
+- System database is cleared based on constant time or based on what controll it.
+- It is prefered if to change test data in properties files each time you are going to run it multiple times.
+- If you have access to database it is prefered if you clear User tables each time test finished.
+
