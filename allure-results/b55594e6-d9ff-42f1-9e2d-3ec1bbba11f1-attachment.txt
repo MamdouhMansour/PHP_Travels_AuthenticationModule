@@ -1,0 +1,6 @@
+
+################################################################################################################################################
+Starting Execution:	[5 out of 10] test cases in the current suite
+Test Method:		[tests.gui.phpTravels.TestRegistration.testLastNameValidation]
+Test Description:	[TC003 - Last Name format validation]
+################################################################################################################################################

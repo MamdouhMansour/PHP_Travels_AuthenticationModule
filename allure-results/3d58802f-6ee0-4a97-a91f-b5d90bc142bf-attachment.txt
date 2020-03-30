@@ -1,0 +1,5 @@
+[ReportManager] Target URL: [https://www.phptravels.net/register], and after redirection if any: [https://www.phptravels.net/register] @30-03-2020 10:09:47.0872 AM
+[ReportManager] Initial URL: [https://www.phptravels.net/login] @30-03-2020 10:09:47.0899 AM
+[ReportManager] File Action [createFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20200330-100837", Target File: "\1585555790109_beforeMethod.gif"]. @30-03-2020 10:09:50.0152 AM
+[ReportManager] Browser Action [navigateToURL] successfully performed. With the following test data [https://www.phptravels.net/register]. @30-03-2020 10:09:50.0896 AM
+[ReportManager] Successfully created attachment [Animated Gif - beforeMethod] @30-03-2020 10:09:50.0898 AM

@@ -1,0 +1,6 @@
+
+################################################################################################################################################
+Starting Execution:	[10 out of 10] test cases in the current suite
+Test Method:		[tests.gui.phpTravels.TestRegistration.testSignUpWithRegisteredEmailValidation]
+Test Description:	[TC007 - Existing Email validation]
+################################################################################################################################################

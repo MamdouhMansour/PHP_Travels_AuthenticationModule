@@ -1,0 +1,6 @@
+
+################################################################################################################################################
+Starting Execution:	[9 out of 10] test cases in the current suite
+Test Method:		[tests.gui.phpTravels.TestRegistration.testPasswordMinLengthVlaidation]
+Test Description:	[TC009 - Password minimum length validation]
+################################################################################################################################################

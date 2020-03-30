@@ -1,0 +1,6 @@
+
+################################################################################################################################################
+Starting Execution:	[4 out of 10] test cases in the current suite
+Test Method:		[tests.gui.phpTravels.TestRegistration.testFirstNameValidation]
+Test Description:	[TC002 - First Name format validation]
+################################################################################################################################################

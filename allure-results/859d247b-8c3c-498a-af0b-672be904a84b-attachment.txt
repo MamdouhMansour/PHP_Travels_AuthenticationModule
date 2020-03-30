@@ -1,0 +1,33 @@
+
+################################################################################################################################################
+Starting Execution:	[1 out of 10] test cases in the current suite
+Test Method:		[tests.gui.phpTravels.TestRegistration.checkSignUpWithValidDataAndVerifyLogin]
+Test Description:	[TC001 - Check sign up successfully then login]
+################################################################################################################################################
+[ReportManager] File Action [createFile] successfully performed. With the following test data [Target Folder: "allure-results//screenshots/20200330-100837", Target File: "\1585555746392_checkSignUpWithValidDataAndVerifyLogin.gif"]. @30-03-2020 10:09:06.0449 AM
+[ReportManager] Element Action [getText] successfully performed. With the following test data [Pixelogic]. @30-03-2020 10:09:07.0184 AM
+[ReportManager] Element Action [type] successfully performed. With the following test data [Pixelogic]. @30-03-2020 10:09:07.0917 AM
+[ReportManager] Element Action [getText] successfully performed. With the following test data [Emerge]. @30-03-2020 10:09:09.0296 AM
+[ReportManager] Element Action [type] successfully performed. With the following test data [Emerge]. @30-03-2020 10:09:10.0029 AM
+[ReportManager] Element Action [getText] successfully performed. With the following test data [00966552834612]. @30-03-2020 10:09:11.0428 AM
+[ReportManager] Element Action [type] successfully performed. With the following test data [00966552834612]. @30-03-2020 10:09:12.0149 AM
+[ReportManager] Element Action [getText] successfully performed. With the following test data [pixel1@yahoo.com]. @30-03-2020 10:09:13.0590 AM
+[ReportManager] Element Action [type] successfully performed. With the following test data [pixel1@yahoo.com]. @30-03-2020 10:09:14.0322 AM
+[ReportManager] Element Action [getText] successfully performed. With the following test data [Zain2412]. @30-03-2020 10:09:15.0725 AM
+[ReportManager] Element Action [type] successfully performed. With the following test data [Zain2412]. @30-03-2020 10:09:16.0434 AM
+[ReportManager] Element Action [getText] successfully performed. With the following test data [Zain2412]. @30-03-2020 10:09:17.0735 AM
+[ReportManager] Element Action [type] successfully performed. With the following test data [Zain2412]. @30-03-2020 10:09:18.0460 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [SIGN UP]. @30-03-2020 10:09:21.0547 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [PIXELOGIC]. @30-03-2020 10:09:25.0420 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Logout]. @30-03-2020 10:09:29.0911 AM
+[ReportManager] Element Action [getText] successfully performed. With the following test data [pixel1@yahoo.com]. @30-03-2020 10:09:31.0277 AM
+[ReportManager] Element Action [type] successfully performed. With the following test data [pixel1@yahoo.com]. @30-03-2020 10:09:32.0030 AM
+[ReportManager] Element Action [getText] successfully performed. With the following test data [Zain2412]. @30-03-2020 10:09:33.0303 AM
+[ReportManager] Element Action [type] successfully performed. With the following test data [Zain2412]. @30-03-2020 10:09:34.0094 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [Remember Me]. @30-03-2020 10:09:35.0899 AM
+[ReportManager] Element Action [click] successfully performed. With the following test data [LOGIN]. @30-03-2020 10:09:37.0714 AM
+[ReportManager] Browser Action [getCurrentURL] successfully performed. With the following test data [https://www.phptravels.net/account/]. @30-03-2020 10:09:39.0950 AM
+[ReportManager] Browser Action [getCurrentURL] successfully performed. With the following test data [https://www.phptravels.net/account/]. @30-03-2020 10:09:40.0698 AM
+[ReportManager] User Logged In Successfully With The Registered Credentials ... @30-03-2020 10:09:40.0711 AM
+[ReportManager] AssertTrue PASSED; Expected [TRUE] and Actual [TRUE]. Validation Type [POSITIVE]. @30-03-2020 10:09:40.0714 AM
+[ReportManager] Successfully created attachment [Animated Gif - checkSignUpWithValidDataAndVerifyLogin] @30-03-2020 10:09:40.0731 AM

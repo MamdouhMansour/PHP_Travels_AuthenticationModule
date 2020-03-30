@@ -1,0 +1,6 @@
+
+################################################################################################################################################
+Starting Execution:	[3 out of 10] test cases in the current suite
+Test Method:		[tests.gui.phpTravels.TestRegistration.testFirstNameAndLastNameMatching]
+Test Description:	[TC004 - Check if user can signup successfully with matched first and last names]
+################################################################################################################################################

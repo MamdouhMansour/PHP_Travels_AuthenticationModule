@@ -1,0 +1,6 @@
+
+################################################################################################################################################
+Starting Execution:	[7 out of 10] test cases in the current suite
+Test Method:		[tests.gui.phpTravels.TestRegistration.testPasswordConfirmationValidation]
+Test Description:	[TC0010 - Password confirmation validation]
+################################################################################################################################################
