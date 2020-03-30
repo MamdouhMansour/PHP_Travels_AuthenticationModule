@@ -134,7 +134,8 @@ public class SignUpFormPage {
 		if (checkCurrentUrl() && ElementActions.isElementDisplayed(browser, signUpResultAlert)) {
 
 			Assertions.assertEquals(expectedMessage, ElementActions.getText(browser, signUpResultAlert),
-					AssertionComparisonType.CONTAINS, AssertionType.POSITIVE, ElementActions.getText(browser, signUpResultAlert));
+					AssertionComparisonType.CONTAINS, AssertionType.POSITIVE,
+					ElementActions.getText(browser, signUpResultAlert));
 
 		} else if (checkCurrentUrl() && !(ElementActions.isElementDisplayed(browser, signUpResultAlert))) {
 			Assertions.assertTrue(!checkCurrentUrl(), AssertionType.POSITIVE, getTestData("AlertMessageNotDisplayed"));
